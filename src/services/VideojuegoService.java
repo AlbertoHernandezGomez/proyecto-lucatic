@@ -15,7 +15,7 @@ public class VideojuegoService implements IVideojuego {
 
 	@Override
 	public ArrayList<Videojuego> listado_videojuegos() {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
