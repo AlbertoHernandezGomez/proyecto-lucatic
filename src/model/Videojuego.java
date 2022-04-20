@@ -10,7 +10,7 @@ public class Videojuego {
 	
 	public Videojuego() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public Videojuego(int rank, String name, String platform, int year, String genre, String publisher) {
