@@ -1,12 +1,12 @@
 package controller;
 
-import interfaces.IVideojuego;
+import interfaces.IVideojuegoService;
 import model.Videojuego;
 
 
 public class Controlador {
 	
-	IVideojuego videojuegoservice;
+	IVideojuegoService videojuegoservice;
 		
 	public Integer darDeAltaVideojuego(Videojuego videojuego) {
 		// Comprobar si ya existe el juego
