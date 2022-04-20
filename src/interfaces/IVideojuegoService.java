@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 import model.Videojuego;
 
-public interface IVideojuego {
+public interface IVideojuegoService {
 	
-	public void dar_alta_videojuego(Videojuego videojuego);
+	public void darDeAltaVideojuego();
 	public ArrayList<Videojuego> listado_videojuegos(); 
 
 }

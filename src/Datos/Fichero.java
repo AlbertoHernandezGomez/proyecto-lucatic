@@ -7,6 +7,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import com.opencsv.CSVWriter;
+
 public class Fichero {
 
 		String csvFile = "vgsales.csv";
@@ -35,10 +37,10 @@ public class Fichero {
 		return fichero;
 	}
 	
-	public void escribirCSV(ArrayList<String[]> fichero) {	
+	public void escribirCSV(ArrayList<String[]> fichero) throws IOException {	
 		try {
-			CSVWriter writer = new CSVWriter(new FileWriter("vgsales.csv"), '\t');
-			writer.writeNext(fichero);
+			CSVWriter writer = new CSVWriter(new FileWriter("vgsales.csv"));
+			writer.writeAll(fichero);
 			writer.close();
 		}catch (FileNotFoundException e) {
 		    e.printStackTrace();
