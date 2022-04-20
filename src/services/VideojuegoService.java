@@ -12,7 +12,7 @@ public class VideojuegoService implements IVideojuegoService {
 	@Override
 	public void darDeAltaVideojuego() {
 		
-		//CREAMOS UN ESCANER PARA LEER POR PANTALLA
+		//ESCANER PARA LEER POR PANTALLA
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Introduzca el nombre del videojuego: ");
